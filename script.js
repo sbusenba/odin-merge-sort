@@ -1,13 +1,9 @@
 mergeArrays = (arrayA,arrayB)=>{
     let mergedArray = []
     while ((arrayA.length>0) && (arrayB.length>0)){
-        console.log ("A and B are longer than 0")
-        console.log(`${arrayA[0]} vs ${arrayB[0]} `)
         if (arrayA[0] >= arrayB[0]){
-            console.log (`${arrayA[0]} > ${arrayB[0]}`)
             mergedArray.push(arrayB.shift())
         } else {
-            console.log (`${arrayA[0]} < ${arrayB[0]}`)
             mergedArray.push(arrayA.shift())
         }
         console.table(mergedArray)
